@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Income Prediction Visualization</h1>
+        <div class="chart-container">
+          <h2>Confusion Matrix</h2>
+            <canvas id="confusionMatrix"></canvas>
+            <div class="explanation-box"> 
+              <p>This chart helps us see how well our model predicts whether someone's income is over $50,000 or not. Each bar shows how many times the model made each type of prediction. Ideally, the highest bars should be on the diagonal from top left to bottom right, indicating correct predictions.</p>
+            </div>
+        </div>
+        
+        <div class="plotly-container">
+          <h2>Decision Boundary</h2>
+          <div id="decisionBoundary"></div>
+          <div class="explanation-box">
+              <p>
+                  This scatter plot shows how our model makes decisions to classify individuals into different income groups based on simplified features.
+                  <br><br>
+                  <h4>Points and Colors:</h4>
+                  - Each point represents an individual.
+                  <br>
+                  - The color of each point indicates the actual income class of the individual. Purple and blue represent 0. Red and yellow represent 1.
+                  <h4>Simplified Features (Principal Components):</h4>
+                  - The axes represent two principal components, which are new features created by combining the original features to capture the most important information.
+                  <br>
+                  - Principal Component 1 (horizontal axis) and Principal Component 2 (vertical axis) simplify the data while retaining key information.
+                  <h4>Positioning and Interpretation:</h4>
+                  - Points are positioned based on their values for the two principal components.
+                  <br>
+                  - Ideally, points of different colors should form distinct clusters. Clear separation indicates the model can distinguish between income classes effectively.
+                  <br>
+                  - Mixed colors indicate difficulty in distinguishing between classes in those areas.
+                  <h4>Decision Boundary:</h4>
+                  - An imaginary line that the model uses to decide which class a new individual belongs to.
+                  <br>
+                  - Points on one side are classified as one income class, and points on the other side are classified as the other income class.
+                  <br>
+                  - The separation between clusters of different colors gives an idea of where this boundary lies.
+              </p>
+          </div>
+      </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
+
+<!-- https://www.sciencedirect.com/topics/engineering/confusion-matrix -->
+
+<!-- https://machinelearningmastery.com/principal-component-analysis-for-visualization/ -->
