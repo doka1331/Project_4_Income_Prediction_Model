@@ -73,11 +73,15 @@ Regularization: Applying regularization techniques (e.g., L1, L2) might help imp
 
 ### Summary of Michael's Unsupervised Machine Learning Model Base and PCA
 What is the total explained variance of the two principal components?
+
 Answer: 98.72%
 
 What is the best value for k when using the PCA data?
+
 Answer: 2
+
 Does it differ from the best k value found using the original data?
+
 Answer: No, the original best k-value was also 2.
 
 The Principle Component Analysis model data was linearly skewed to the right as opposed to the base model datat that seemed to have no structure at all. 
