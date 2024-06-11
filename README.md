@@ -105,3 +105,10 @@ Once again, we observe the same results of 83.26% accuracy and the same classifi
 
 #### Model 4: Logistic Regression
 Although we finally see a change in the outcome, it's unfortunately not a change in the right direction. Instead of the 83.26% accuracy we achieved before, this model sees a 75.03% accuracy, which barely reaches our goal. This suggests that isolating what showed to be the more "correlated" variables not only didn't help the model, it significantly hurt the model. On top of that, all other numbers on the classification report dropped, except for the recall score for class 0. This is an indication that the model with isolated features is worse in many ways but can potentially outperform the other models in correctly identifying those who will make less than 50k. Overall, this model should not be used or built upon and we should return to trying other ideas
+
+### Jade's Models
+I created a supervised learning model and decided to visualize the confusion matrix and PCA scatter plot. The confusion matrix shows all possibilities with the predictions of the model, true positives and negatives, and false positives and negatives. The PCA scatter plot is an interactive model showing the test and training data. Purple and blue represent 0 or individuals with income less than 50k. Red and yellow represent 1 or individuals with income greater than 50k. Clear clusters show the model’s ability to distinguish between income classes. Overall we can visually see that our models were good at predicting income based on various factors given. Using HTML, JavaScript, and CSS, we were able to display and make the visualizations interactive to better visualize the accuracy of our model predictions.
+
+SOURCES:
+https://www.sciencedirect.com/topics/engineering/confusion-matrix 
+https://machinelearningmastery.com/principal-component-analysis-for-visualization/ 
