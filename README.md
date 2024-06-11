@@ -21,13 +21,13 @@ Regularization: Applying regularization techniques (e.g., L1, L2) might help imp
 
 ### Summary of Michael's Unsupervised Machine Learning Model Base and PCA
 What is the total explained variance of the two principal components?
- 98.72%
+    98.72%
 
 What is the best value for k when using the PCA data?
- 2
+    2
 
 Does it differ from the best k value found using the original data?
- No, the original best k-value was also 2.
+    No, the original best k-value was also 2.
 
 The Principle Component Analysis model data was linearly skewed to the right as opposed to the base model datat that seemed to have no structure at all. 
 When data is right-skewed, or positively skewed, it means that the distribution is longer on the right side of its peak than on the left. This results in a long tail on the right side of the distribution, and a skewness value that is greater than zero. The two clusters seemed to have a clear and distinct division straight down the middle in both the base and PCA models which represents the model's accuracy and precision in determining income cluster groups for individuals.  
