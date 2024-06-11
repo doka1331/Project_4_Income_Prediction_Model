@@ -91,6 +91,9 @@ Answer: No, the original best k-value was also 2.
 The Principle Component Analysis model data was linearly skewed to the right as opposed to the base model datat that seemed to have no structure at all. 
 When data is right-skewed, or positively skewed, it means that the distribution is longer on the right side of its peak than on the left. This results in a long tail on the right side of the distribution, and a skewness value that is greater than zero. The two clusters seemed to have a division straight down the middle in both the base and PCA models. 
 
+Sources:
+ChatGPT version 3.5: https://chatgpt.com/c/d83cb97e-9d55-4888-954d-c7f2e1cdd9fa
+
 ### Tyler's Models
 #### Model 1: Logistic Regression
 The first model achieves an accuracy of 83.26% which outperforms the goal of 75%. The 83.26% represents the total predictions (both income below and above 50k) that were correct.
