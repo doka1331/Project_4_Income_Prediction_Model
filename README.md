@@ -10,36 +10,57 @@ Within the Folder titled "Completed_Script_Kang" is the "Resources" folder that 
 ### Summary of Results for Michael's Supervised Machine Learning Model
 ### Metrics Overview and Results
 •	Precision: The ratio of correctly predicted positive observations to the total predicted positives.
+
 •	Recall: The ratio of correctly predicted positive observations to all observations in the actual class.
+
 •	F1-Score: The weighted average of Precision and Recall.
+
 •	Support: The number of actual observations of the class in the test data.
+
 Class 0 (Income <= 50K)
+
 •	Precision: (0.86)
+
 •	Recall: (0.92)
+
 •	F1-Score: (0.89)
+
 •	Support: (5752)
+
 Class 1 (Income > 50K)
+
 •	Precision: (0.70)
+
 •	Recall: (0.57)
+
 •	F1-Score: (0.63)
+
 •	Support: (1928)
+
 ### Overall Metrics
 •	Accuracy: (0.83)
 o	The ratio of correctly predicted instances to the total number of instances.
+
 •	Macro Avg:
 o	Precision: (0.78)
 	The average precision over all classes, without considering class imbalance.
+
 o	Recall: (0.74)
 	The average recall over all classes, without considering class imbalance.
+
 o	F1-Score: (0.76)
 	The average F1-score over all classes, without considering class imbalance.
+
 •	Weighted Avg:
 o	Precision: (0.82)
 	The average precision over all classes, weighted by the number of instances in each class.
+
 o	Recall: (0.83)
 	The average recall over all classes, weighted by the number of instances in each class.
+
 o	F1-Score: (0.82)
 	The average F1-score over all classes, weighted by the number of instances in each class.
+
 ### Summary
 Class 0 Performance: The model performs very well in identifying instances of class 0 (individuals who make a yearly salary that equates or does not exceed $50k) with high precision (0.86) and recall (0.92). This indicates that the model is very good at correctly predicting if individuals make a yearly salary that equates or is less than $50k.
 Class 1 Performance: The model performs moderately well in identifying instances of class 1 (individuals who make a yearly salary that exceeds $50k), with lower precision (0.70) and recall (0.57). This suggests the model struggles more with correctly predicting if individuals make a yearly salary that exceeds $50k.
