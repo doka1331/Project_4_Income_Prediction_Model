@@ -89,7 +89,7 @@ Does it differ from the best k value found using the original data?
 Answer: No, the original best k-value was also 2.
 
 The Principle Component Analysis model data was linearly skewed to the right as opposed to the base model datat that seemed to have no structure at all. 
-When data is right-skewed, or positively skewed, it means that the distribution is longer on the right side of its peak than on the left. This results in a long tail on the right side of the distribution, and a skewness value that is greater than zero. The two clusters seemed to have a division straight down the middle in both the base and PCA models. 
+When data is right-skewed, or positively skewed, it means that the distribution is longer on the right side of its peak than on the left. This results in a long tail on the right side of the distribution, and a skewness value that is greater than zero. The two clusters seemed to have a clear and distinct division straight down the middle in both the base and PCA models which represents the model's accuracy and precision in determining income cluster groups for individuals.  
 
 Sources:
 ChatGPT version 3.5: https://chatgpt.com/c/d83cb97e-9d55-4888-954d-c7f2e1cdd9fa
