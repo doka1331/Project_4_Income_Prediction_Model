@@ -8,7 +8,8 @@ The supervised models were used more for future predicting while the unsupervise
 Within the Folder titled "Completed_Script_Kang" is the "Resources" folder that contains both the cleaned and raw data. There is also an ETL script titled "ETL_Script.ipynb" that transforms that raw data into the cleaned data via Jupyter notebook and Pandas manipulation. The script "Supervised_Income_Regression_Model.ipynb" contains the script for my supervised machine logistic regression model that was used to predict if an individual's yearly income does not exceed, is equal to, or exceeds $50,000 based on their other recorded statistics. The script "Unsupervised_PCA_Model_Comparison_Kang.ipynb" contains the script for my base KMeans clustering unsupervised model as well as the script for my PCA KMeans clustering unsupervised model. 
 
 ### Summary of Results for Michael's Supervised Machine Learning Model
-### Metrics Overview and Results
+Metrics Overview and Results
+
 •	Precision: The ratio of correctly predicted positive observations to the total predicted positives.
 
 •	Recall: The ratio of correctly predicted positive observations to all observations in the actual class.
@@ -37,7 +38,8 @@ Class 1 (Income > 50K)
 
 •	Support: (1928)
 
-### Overall Metrics
+Overall Metrics
+
 Accuracy: (0.83)
 The ratio of correctly predicted instances to the total number of instances.
 
@@ -61,12 +63,14 @@ The average recall over all classes, weighted by the number of instances in each
 F1-Score: (0.82)
 The average F1-score over all classes, weighted by the number of instances in each class.
 
-### Summary
+Summary
+
 Class 0 Performance: The model performs very well in identifying instances of class 0 (individuals who make a yearly salary that equates or does not exceed $50k) with high precision (0.86) and recall (0.92). This indicates that the model is very good at correctly predicting if individuals make a yearly salary that equates or is less than $50k.
 Class 1 Performance: The model performs moderately well in identifying instances of class 1 (individuals who make a yearly salary that exceeds $50k), with lower precision (0.70) and recall (0.57). This suggests the model struggles more with correctly predicting if individuals make a yearly salary that exceeds $50k.
 Overall Performance: The overall accuracy of the model is 0.83, indicating that the model correctly predicts the income category for 83% of the total number of observed instances. The weighted averages also suggest that the model performs better on the majority class (class 0) but has room for improvement on the minority class (class 1).
 
-### Suggested Improvements
+Suggested Improvements
+
 Address Class Imbalance: The model performs significantly better on class 0 compared to class 1, likely due to class imbalance. Techniques like oversampling the minority class, under sampling the majority class could help improve performance on class 1.
 Model Tuning: Adjusting hyperparameters or trying different algorithms (e.g., Random Forest, Gradient Boosting) could potentially yield better results.
 Regularization: Applying regularization techniques (e.g., L1, L2) might help improve generalization.
