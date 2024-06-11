@@ -38,33 +38,34 @@ Class 1 (Income > 50K)
 •	Support: (1928)
 
 ### Overall Metrics
-•	Accuracy: (0.83)
-o	The ratio of correctly predicted instances to the total number of instances.
+Accuracy: (0.83)
+The ratio of correctly predicted instances to the total number of instances.
 
-•	Macro Avg:
-o	Precision: (0.78)
-	The average precision over all classes, without considering class imbalance.
+Macro Avg:
+Precision: (0.78)
+The average precision over all classes, without considering class imbalance.
 
-o	Recall: (0.74)
-	The average recall over all classes, without considering class imbalance.
+Recall: (0.74)
+The average recall over all classes, without considering class imbalance.
 
-o	F1-Score: (0.76)
-	The average F1-score over all classes, without considering class imbalance.
+F1-Score: (0.76)
+The average F1-score over all classes, without considering class imbalance.
 
-•	Weighted Avg:
-o	Precision: (0.82)
-	The average precision over all classes, weighted by the number of instances in each class.
+Weighted Avg:
+Precision: (0.82)
+The average precision over all classes, weighted by the number of instances in each class.
 
-o	Recall: (0.83)
-	The average recall over all classes, weighted by the number of instances in each class.
+Recall: (0.83)
+The average recall over all classes, weighted by the number of instances in each class.
 
-o	F1-Score: (0.82)
-	The average F1-score over all classes, weighted by the number of instances in each class.
+F1-Score: (0.82)
+The average F1-score over all classes, weighted by the number of instances in each class.
 
 ### Summary
 Class 0 Performance: The model performs very well in identifying instances of class 0 (individuals who make a yearly salary that equates or does not exceed $50k) with high precision (0.86) and recall (0.92). This indicates that the model is very good at correctly predicting if individuals make a yearly salary that equates or is less than $50k.
 Class 1 Performance: The model performs moderately well in identifying instances of class 1 (individuals who make a yearly salary that exceeds $50k), with lower precision (0.70) and recall (0.57). This suggests the model struggles more with correctly predicting if individuals make a yearly salary that exceeds $50k.
 Overall Performance: The overall accuracy of the model is 0.83, indicating that the model correctly predicts the income category for 83% of the total number of observed instances. The weighted averages also suggest that the model performs better on the majority class (class 0) but has room for improvement on the minority class (class 1).
+
 ### Suggested Improvements
 Address Class Imbalance: The model performs significantly better on class 0 compared to class 1, likely due to class imbalance. Techniques like oversampling the minority class, under sampling the majority class could help improve performance on class 1.
 Model Tuning: Adjusting hyperparameters or trying different algorithms (e.g., Random Forest, Gradient Boosting) could potentially yield better results.
